@@ -1,0 +1,10 @@
+Scanner input = new Scanner(System.in);
+
+        Libro b1 = new Libro();
+        
+        b1.cargarLibro();
+        
+        System.out.println(b1);
+
+
+    }

@@ -1,0 +1,51 @@
+ Dibujar un cuadrado de N elementos por lado utilizando el carácter “*”.
+Por ejemplo, si el cuadrado tiene 4 elementos por lado se deberá dibujar
+lo siguiente:
+* * * *
+*     *
+*     *
+* * * *
+---------------------------------------------------
+ public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
+
+        System.out.println("Ingrese un valor numérico");
+        int valor = leer.nextInt();
+
+        for (int i = 0; i < valor; i++) {
+            System.out.print(" * ");
+        }
+        System.out.println(" ");
+        for (int i = 0; i < valor; i++) {
+            System.out.println(" *        *");
+        }
+        for (int i = 0; i < valor; i++) {
+            System.out.print(" * ");
+        }
+        System.out.println(" ");
+
+
+---------------------------------------------------
+
+System.out.println("Ingrese un valor numérico");
+        int valor = leer.nextInt();
+
+        for (int i = 1; i < valor; i++) {
+            System.out.print(" * ");
+        }
+        System.out.println(" ");
+
+        for (int j = 1; j < valor; j--) {
+            System.out.print(" * ");
+            for (int k = 0; k < 10; k--) {
+                
+               System.out.print("  ");
+            } 
+          System.out.println(" * ");  
+        }
+        for (int i = 1; i < valor; i++) {
+            System.out.print(" * ");
+        }
+        System.out.println(" ");
+
+    }
